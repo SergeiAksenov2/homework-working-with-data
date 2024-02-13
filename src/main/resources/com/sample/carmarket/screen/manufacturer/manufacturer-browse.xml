@@ -37,6 +37,7 @@
                         <action id="create" type="create"/>
                         <action id="edit" type="edit"/>
                         <action id="remove" type="remove"/>
+                        <action id="calculateCars" caption="msg://calculateCars.caption"/>
                     </actions>
                     <columns>
                         <column id="name"/>
@@ -48,6 +49,7 @@
                         <button id="createBtn" action="table.create"/>
                         <button id="editBtn" action="table.edit"/>
                         <button id="removeBtn" action="table.remove"/>
+                        <button id="calculateCarsBtn" action="table.calculateCars"/>
                     </buttonsPanel>
                 </table>
                 <hbox id="lookupActions" spacing="true" visible="false">
