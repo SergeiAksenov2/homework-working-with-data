@@ -50,7 +50,7 @@ public class ManufacturerBrowse extends MasterDetailScreen<Manufacturer> {
         } else {
             notifications.create()
                     .withType(Notifications.NotificationType.TRAY)
-                    .withDescription("The manufacturer is not selected.")
+                    .withDescription("The manufacturer is not selected")
                     .show();
         }
     }

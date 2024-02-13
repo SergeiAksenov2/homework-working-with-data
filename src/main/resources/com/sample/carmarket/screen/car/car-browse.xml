@@ -46,6 +46,7 @@
                 <action id="create" type="create"/>
                 <action id="edit" type="edit"/>
                 <action id="remove" type="remove"/>
+                <action id="carMarkAsSold"/>
             </actions>
             <columns>
                 <column id="registrationNumber"/>
@@ -60,6 +61,7 @@
                 <button id="createBtn" action="carsTable.create"/>
                 <button id="editBtn" action="carsTable.edit"/>
                 <button id="removeBtn" action="carsTable.remove"/>
+                <button id="carMarkAsSoldBtn" action="carsTable.carMarkAsSold" caption="Mark as Sold"/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">
