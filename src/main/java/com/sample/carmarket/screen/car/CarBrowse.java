@@ -31,7 +31,6 @@ public class CarBrowse extends StandardLookup<Car> {
         if (carSelected != null) {
             if (carSelected.getStatus() == Status.SOLD) {
                 notifications.create()
-                        .withType(Notifications.NotificationType.TRAY)
                         .withDescription("Already Sold")
                         .show();
             } else {
@@ -39,7 +38,6 @@ public class CarBrowse extends StandardLookup<Car> {
                 carSelected.setDateOfSale(LocalDate.now());
                 dataManager.save(carSelected);
                 notifications.create()
-                        .withType(Notifications.NotificationType.TRAY)
                         .withDescription("Done")
                         .show();
             }

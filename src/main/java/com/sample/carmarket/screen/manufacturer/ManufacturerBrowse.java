@@ -43,13 +43,11 @@ public class ManufacturerBrowse extends MasterDetailScreen<Manufacturer> {
                     .parameter("modelManufacturerId1", selectedManufacturerId)
                     .one();
             notifications.create()
-                    .withType(Notifications.NotificationType.TRAY)
                     .withDescription("Electric cars: " + electricCars + ", gasoline cars: " + gasolineCars)
                     .show();
 
         } else {
             notifications.create()
-                    .withType(Notifications.NotificationType.TRAY)
                     .withDescription("The manufacturer is not selected")
                     .show();
         }
